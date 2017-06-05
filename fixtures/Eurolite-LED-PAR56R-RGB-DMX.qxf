@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>EUrolite</Manufacturer>
+ <Model>LED PAR56R RGB DMX</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">red intensity</Capability>
+ </Channel>
+ <Channel Name="green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">green intensity</Capability>
+ </Channel>
+ <Channel Name="blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">blue intensity</Capability>
+ </Channel>
+ <Channel Name="Strobe/Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Strobe (Color) / Speed (Build in Programs)</Capability>
+ </Channel>
+ <Channel Name="Programs">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="31">RGB colors</Capability>
+  <Capability Min="32" Max="63">slow fade in</Capability>
+  <Capability Min="64" Max="95">slow fade out</Capability>
+  <Capability Min="96" Max="127">slow fade out/in</Capability>
+  <Capability Min="128" Max="159">rainbow fade</Capability>
+  <Capability Min="160" Max="191">3 color jump</Capability>
+  <Capability Min="192" Max="223">7 color jump</Capability>
+  <Capability Min="224" Max="255">sound controlled</Capability>
+ </Channel>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">MACRO OFF</Capability>
+  <Capability Min="16" Max="255">MACRO ON</Capability>
+ </Channel>
+ <Mode Name="6 Ch.">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1.6" Width="220" Height="220" Depth="210"/>
+   <Lens Name="Other" DegreesMin="30" DegreesMax="30"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="20" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">red</Channel>
+  <Channel Number="1">green</Channel>
+  <Channel Number="2">blue</Channel>
+  <Channel Number="3">Macro</Channel>
+  <Channel Number="4">Strobe/Speed</Channel>
+  <Channel Number="5">Programs</Channel>
+ </Mode>
+</FixtureDefinition>

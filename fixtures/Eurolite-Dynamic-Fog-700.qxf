@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>Dynamic Fog 700</Model>
+ <Type>Smoke</Type>
+ <Channel Name="Fog output">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">no fog output</Capability>
+  <Capability Min="6" Max="255">5% fog output -&gt; 100% fog output</Capability>
+ </Channel>
+ <Mode Name="DMX">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="3.7" Width="250" Height="215" Depth="320"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="700" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Fog output</Channel>
+ </Mode>
+</FixtureDefinition>

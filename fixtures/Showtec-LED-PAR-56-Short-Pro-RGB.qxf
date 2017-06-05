@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Showtec</Manufacturer>
+ <Model>LED PAR 56 Short Pro RGB</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">red intensity</Capability>
+ </Channel>
+ <Channel Name="green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">green intensity</Capability>
+ </Channel>
+ <Channel Name="blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">blue intensity</Capability>
+ </Channel>
+ <Channel Name="Colors">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">no function</Capability>
+  <Capability Min="8" Max="14">Color 1</Capability>
+  <Capability Min="15" Max="21">Color 2</Capability>
+  <Capability Min="22" Max="28">Color 3</Capability>
+  <Capability Min="29" Max="35">Color 4</Capability>
+  <Capability Min="36" Max="42">Color 5</Capability>
+  <Capability Min="43" Max="49">Color 6</Capability>
+  <Capability Min="50" Max="56">Color 7</Capability>
+  <Capability Min="57" Max="63">Color 8</Capability>
+  <Capability Min="64" Max="70">Color 9</Capability>
+  <Capability Min="71" Max="77">Color 10</Capability>
+  <Capability Min="78" Max="84">Color 11</Capability>
+  <Capability Min="85" Max="91">Color 12</Capability>
+  <Capability Min="92" Max="98">Color 13</Capability>
+  <Capability Min="99" Max="105">Color 14</Capability>
+  <Capability Min="106" Max="112">Color 15</Capability>
+  <Capability Min="113" Max="119">Color 16</Capability>
+  <Capability Min="120" Max="126">Color 17</Capability>
+  <Capability Min="127" Max="133">Color 18</Capability>
+  <Capability Min="134" Max="140">Color 19</Capability>
+  <Capability Min="141" Max="147">Color 20</Capability>
+  <Capability Min="148" Max="154">Color 21</Capability>
+  <Capability Min="155" Max="161">Color 22</Capability>
+  <Capability Min="162" Max="168">Color 23</Capability>
+  <Capability Min="169" Max="175">Color 24</Capability>
+  <Capability Min="176" Max="182">Color 25</Capability>
+  <Capability Min="183" Max="189">Color 26</Capability>
+  <Capability Min="190" Max="196">Color 27</Capability>
+  <Capability Min="197" Max="203">Color 28</Capability>
+  <Capability Min="204" Max="210">Color 29</Capability>
+  <Capability Min="211" Max="217">Color 30</Capability>
+  <Capability Min="218" Max="224">Color 31</Capability>
+  <Capability Min="225" Max="231">Color 32</Capability>
+  <Capability Min="232" Max="238">Color 33</Capability>
+  <Capability Min="239" Max="245">Color 34</Capability>
+  <Capability Min="246" Max="252">Color 35</Capability>
+  <Capability Min="253" Max="255">Color 36</Capability>
+ </Channel>
+ <Channel Name="Strobe/Speed/Sensitivity">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Strobe (Color) / Speed (Build in Programs) / Sensitivity (Sound)</Capability>
+ </Channel>
+ <Channel Name="Programs">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="31">RGB colors</Capability>
+  <Capability Min="32" Max="63">slow fade in</Capability>
+  <Capability Min="64" Max="95">slow fade out</Capability>
+  <Capability Min="96" Max="127">slow fade in/out</Capability>
+  <Capability Min="128" Max="159">rainbow fade</Capability>
+  <Capability Min="160" Max="191">3 color jump</Capability>
+  <Capability Min="192" Max="223">7 color jump</Capability>
+  <Capability Min="224" Max="255">sound controlled</Capability>
+ </Channel>
+ <Mode Name="3 Ch. RGB">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.2" Width="225" Height="225" Depth="260"/>
+   <Lens Name="Other" DegreesMin="20" DegreesMax="20"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="31" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">red</Channel>
+  <Channel Number="1">green</Channel>
+  <Channel Number="2">blue</Channel>
+ </Mode>
+ <Mode Name="6 Ch. RGB Effect">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.2" Width="225" Height="225" Depth="260"/>
+   <Lens Name="Other" DegreesMin="20" DegreesMax="20"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="31" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">red</Channel>
+  <Channel Number="1">green</Channel>
+  <Channel Number="2">blue</Channel>
+  <Channel Number="3">Colors</Channel>
+  <Channel Number="4">Strobe/Speed/Sensitivity</Channel>
+  <Channel Number="5">Programs</Channel>
+ </Mode>
+</FixtureDefinition>

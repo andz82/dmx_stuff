@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED SLS-144 UV</Model>
+ <Type>Strobe</Type>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>UV</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="Function">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">Dimmer</Capability>
+  <Capability Min="1" Max="5">Music</Capability>
+  <Capability Min="6" Max="10">Dimmer</Capability>
+  <Capability Min="11" Max="255">Strobe (incr. Speed)</Capability>
+ </Channel>
+ <Mode Name="2 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="1" Width="235" Height="210" Depth="110"/>
+   <Lens Name="Other" DegreesMin="21" DegreesMax="21"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="7" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Function</Channel>
+ </Mode>
+</FixtureDefinition>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.3a</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>muCCC</Manufacturer>
+ <Model>rad1o</Model>
+ <Type>Effect</Type>
+ <Channel Name="LED Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">Off</Capability>
+  <Capability Min="1" Max="1">All like LED0</Capability>
+  <Capability Min="2" Max="2">Individual Colors</Capability>
+  <Capability Min="3" Max="9">reserved</Capability>
+  <Capability Min="10" Max="255">Animations</Capability>
+ </Channel>
+ <Channel Name="Display Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">Off</Capability>
+  <Capability Min="1" Max="1">All like LED0</Capability>
+  <Capability Min="2" Max="2">Individual Colors</Capability>
+  <Capability Min="3" Max="9">reserved</Capability>
+  <Capability Min="10" Max="255">Animations</Capability>
+ </Channel>
+ <Channel Name="Red LED 0">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Led 0</Capability>
+ </Channel>
+ <Channel Name="Red LED 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 1</Capability>
+ </Channel>
+ <Channel Name="Red LED 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 2</Capability>
+ </Channel>
+ <Channel Name="Red LED 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 3</Capability>
+ </Channel>
+ <Channel Name="Red LED 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 4</Capability>
+ </Channel>
+ <Channel Name="Red LED 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 5</Capability>
+ </Channel>
+ <Channel Name="Red LED 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED 6</Capability>
+ </Channel>
+ <Channel Name="Red LED 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red LED7</Capability>
+ </Channel>
+ <Channel Name="Green LED 0">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 0</Capability>
+ </Channel>
+ <Channel Name="Green LED 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 1</Capability>
+ </Channel>
+ <Channel Name="Green LED 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 2</Capability>
+ </Channel>
+ <Channel Name="Green LED 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 3</Capability>
+ </Channel>
+ <Channel Name="Green LED 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 4</Capability>
+ </Channel>
+ <Channel Name="Green LED 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 5</Capability>
+ </Channel>
+ <Channel Name="Green LED 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 6</Capability>
+ </Channel>
+ <Channel Name="Green LED 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green LED 7</Capability>
+ </Channel>
+ <Channel Name="Blue LED 0">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 0</Capability>
+ </Channel>
+ <Channel Name="Blue LED 1">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 1</Capability>
+ </Channel>
+ <Channel Name="Blue LED 2">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 2</Capability>
+ </Channel>
+ <Channel Name="Blue LED 3">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 3</Capability>
+ </Channel>
+ <Channel Name="Blue LED 4">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 4</Capability>
+ </Channel>
+ <Channel Name="Blue LED 5">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 5</Capability>
+ </Channel>
+ <Channel Name="Blue LED 6">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 6</Capability>
+ </Channel>
+ <Channel Name="Blue LED 7">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue LED 7</Capability>
+ </Channel>
+ <Mode Name="Full">
+  <Physical>
+   <Bulb Type="LED" Lumens="10" ColourTemperature="0"/>
+   <Dimensions Weight="0.2" Width="300" Height="200" Depth="300"/>
+   <Lens Name="Other" DegreesMin="180" DegreesMax="180"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="1" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">LED Mode</Channel>
+  <Channel Number="1">Display Mode</Channel>
+  <Channel Number="2">Red LED 0</Channel>
+  <Channel Number="3">Green LED 0</Channel>
+  <Channel Number="4">Blue LED 0</Channel>
+  <Channel Number="5">Red LED 1</Channel>
+  <Channel Number="6">Green LED 1</Channel>
+  <Channel Number="7">Blue LED 1</Channel>
+  <Channel Number="8">Red LED 2</Channel>
+  <Channel Number="9">Green LED 2</Channel>
+  <Channel Number="10">Blue LED 2</Channel>
+  <Channel Number="11">Red LED 3</Channel>
+  <Channel Number="12">Green LED 3</Channel>
+  <Channel Number="13">Blue LED 3</Channel>
+  <Channel Number="14">Red LED 4</Channel>
+  <Channel Number="15">Green LED 4</Channel>
+  <Channel Number="16">Blue LED 4</Channel>
+  <Channel Number="17">Red LED 5</Channel>
+  <Channel Number="18">Green LED 5</Channel>
+  <Channel Number="19">Blue LED 5</Channel>
+  <Channel Number="20">Red LED 6</Channel>
+  <Channel Number="21">Green LED 6</Channel>
+  <Channel Number="22">Blue LED 6</Channel>
+  <Channel Number="23">Red LED 7</Channel>
+  <Channel Number="24">Green LED 7</Channel>
+  <Channel Number="25">Blue LED 7</Channel>
+  <Head>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+  </Head>
+  <Head>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+   <Channel>16</Channel>
+  </Head>
+  <Head>
+   <Channel>17</Channel>
+   <Channel>18</Channel>
+   <Channel>19</Channel>
+  </Head>
+  <Head>
+   <Channel>20</Channel>
+   <Channel>21</Channel>
+   <Channel>22</Channel>
+  </Head>
+  <Head>
+   <Channel>23</Channel>
+   <Channel>24</Channel>
+   <Channel>25</Channel>
+  </Head>
+ </Mode>
+</FixtureDefinition>
