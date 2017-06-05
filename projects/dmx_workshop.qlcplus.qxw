@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="ArtNet"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2">
+    <Input Plugin="MIDI" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Laserworld</Manufacturer>
+   <Model>CS-1000RGB MKII</Model>
+   <Mode>CS1000 RGB MKII</Mode>
+   <ID>7</ID>
+   <Name>CS-1000RGB MKII</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Renkforce</Manufacturer>
+   <Model>Moving Head</Model>
+   <Mode>13Ch</Mode>
+   <ID>8</ID>
+   <Name>Moving Head</Name>
+   <Universe>0</Universe>
+   <Address>11</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>9</ID>
+   <Name>LED Stage Bar links</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>10</ID>
+   <Name>LED Stage Bar rechts</Name>
+   <Universe>0</Universe>
+   <Address>48</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED SLS-144 UV</Model>
+   <Mode>2 Channel</Mode>
+   <ID>11</ID>
+   <Name>LED SLS-144 UV</Name>
+   <Universe>0</Universe>
+   <Address>72</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED PST-9W RGB DMX Spot</Model>
+   <Mode>5 Ch.</Mode>
+   <ID>12</ID>
+   <Name>LED PST-9W RGB DMX Spot</Name>
+   <Universe>0</Universe>
+   <Address>74</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED PAR 56 Short Pro RGB</Model>
+   <Mode>3 Ch. RGB</Mode>
+   <ID>13</ID>
+   <Name>LED PAR 56 Short Pro RGB</Name>
+   <Universe>0</Universe>
+   <Address>79</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>Dynamic Fog 700</Model>
+   <Mode>DMX</Mode>
+   <ID>14</ID>
+   <Name>Dynamic Fog 700</Name>
+   <Universe>0</Universe>
+   <Address>82</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <ChannelsGroup ID="0" Name="all_red" Value="0">8,6,9,0,9,3,9,6,9,9,9,12,9,15,9,18,9,21,10,0,10,3,10,6,10,9,10,12,10,15,10,18,10,21,12,0,13,0</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="all_green" Value="0">8,7,9,1,9,4,9,7,9,10,9,13,9,16,9,19,9,22,10,1,10,4,10,7,10,10,10,13,10,16,10,19,10,22,12,1,13,1</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="all_blue" Value="0">8,8,9,2,9,5,9,8,9,11,9,14,9,17,9,20,9,23,10,2,10,5,10,8,10,11,10,14,10,17,10,20,10,23,12,2,13,2</ChannelsGroup>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
