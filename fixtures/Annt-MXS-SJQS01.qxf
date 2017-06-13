@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>Christian Gerbrandt</Author>
+ </Creator>
+ <Manufacturer>Annt</Manufacturer>
+ <Model>MXS-SJQS01</Model>
+ <Type>Flower</Type>
+ <Channel Name="strobe">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="5">all light</Capability>
+  <Capability Min="6" Max="255">strobe fast to slow</Capability>
+ </Channel>
+ <Channel Name="red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">from dark to light</Capability>
+ </Channel>
+ <Channel Name="green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">from dark to light</Capability>
+ </Channel>
+ <Channel Name="blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">from dark to light</Capability>
+ </Channel>
+ <Channel Name="motor speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="5">static</Capability>
+  <Capability Min="6" Max="127">clockwise</Capability>
+  <Capability Min="128" Max="255">counter clockwise</Capability>
+ </Channel>
+ <Channel Name="auto run">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="25">open CH1-CH5</Capability>
+  <Capability Min="26" Max="227">prog CH1-CH5 off</Capability>
+ </Channel>
+ <Mode Name="1ch">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">auto run</Channel>
+ </Mode>
+ <Mode Name="4ch">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">red</Channel>
+  <Channel Number="1">green</Channel>
+  <Channel Number="2">blue</Channel>
+  <Channel Number="3">motor speed</Channel>
+ </Mode>
+ <Mode Name="6ch">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">strobe</Channel>
+  <Channel Number="1">red</Channel>
+  <Channel Number="2">green</Channel>
+  <Channel Number="3">blue</Channel>
+  <Channel Number="4">motor speed</Channel>
+  <Channel Number="5">auto run</Channel>
+ </Mode>
+</FixtureDefinition>

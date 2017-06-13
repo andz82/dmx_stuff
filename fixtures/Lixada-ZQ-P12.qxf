@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5b</Version>
+  <Author>Christian Gerbrandt</Author>
+ </Creator>
+ <Manufacturer>Lixada</Manufacturer>
+ <Model>ZQ-P12</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="macros">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="10">dmx</Capability>
+  <Capability Min="11" Max="50">macro A1</Capability>
+  <Capability Min="51" Max="100">macro A2</Capability>
+  <Capability Min="101" Max="150">macro A3</Capability>
+  <Capability Min="151" Max="200">macro A4</Capability>
+  <Capability Min="201" Max="255">macro A5</Capability>
+ </Channel>
+ <Channel Name="color">
+  <Group Byte="0">Colour</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="39">all color</Capability>
+  <Capability Min="40" Max="49" Color="#ff0000">red</Capability>
+  <Capability Min="50" Max="59" Color="#00ff00">green</Capability>
+  <Capability Min="60" Max="69" Color="#0000ff">blue</Capability>
+  <Capability Min="70" Max="79" Color="#ffff00">yellow</Capability>
+  <Capability Min="80" Max="89" Color="#00ffff">cyan</Capability>
+  <Capability Min="90" Max="99" Color="#800080">purple</Capability>
+  <Capability Min="100" Max="109" Color="#ffffff">white</Capability>
+  <Capability Min="110" Max="119">red + green</Capability>
+  <Capability Min="120" Max="129">red + blue</Capability>
+  <Capability Min="130" Max="139">red + white</Capability>
+  <Capability Min="140" Max="149">green + blue</Capability>
+  <Capability Min="150" Max="159">green + white</Capability>
+  <Capability Min="160" Max="169">blue + white</Capability>
+  <Capability Min="170" Max="179">red + green + white</Capability>
+  <Capability Min="180" Max="189">red + blue + white</Capability>
+  <Capability Min="190" Max="199">green + blue + white</Capability>
+  <Capability Min="200" Max="209">red + green + blue</Capability>
+  <Capability Min="210" Max="255">red + green + blue + white</Capability>
+ </Channel>
+ <Channel Name="speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">speed</Capability>
+ </Channel>
+ <Channel Name="master">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">dimm</Capability>
+ </Channel>
+ <Channel Name="red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">dimm</Capability>
+ </Channel>
+ <Channel Name="green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">dimm</Capability>
+ </Channel>
+ <Channel Name="blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">dimm</Capability>
+ </Channel>
+ <Channel Name="white">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">dimm</Capability>
+ </Channel>
+ <Mode Name="8ch">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="200" Height="200" Depth="150"/>
+   <Lens Name="Other" DegreesMin="25" DegreesMax="25"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="15" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">macros</Channel>
+  <Channel Number="1">color</Channel>
+  <Channel Number="2">speed</Channel>
+  <Channel Number="3">master</Channel>
+  <Channel Number="4">red</Channel>
+  <Channel Number="5">green</Channel>
+  <Channel Number="6">blue</Channel>
+  <Channel Number="7">white</Channel>
+ </Mode>
+</FixtureDefinition>
