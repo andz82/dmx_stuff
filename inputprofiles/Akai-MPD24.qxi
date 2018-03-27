@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.1</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Akai</Manufacturer>
+ <Model> MPD24</Model>
+ <Type>MIDI</Type>
+ <Channel Number="4">
+  <Name>Slider 05</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="7">
+  <Name>Slider 06</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="16">
+  <Name>Slider 01</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="17">
+  <Name>Slider 02</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="18">
+  <Name>Slider 03</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="19">
+  <Name>Slider 04</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="35">
+  <Name>K4</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="41">
+  <Name>K2</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="51">
+  <Name>K1</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="56">
+  <Name>K3</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="61">
+  <Name>K5</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="72">
+  <Name>K6</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="77">
+  <Name>K8</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="82">
+  <Name>K7</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="164">
+  <Name>Pad 01</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="165">
+  <Name>Pad 02</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="166">
+  <Name>Pad 03</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="168">
+  <Name>Pad 04</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="170">
+  <Name>Pad 05</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="171">
+  <Name>Pad 12</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="172">
+  <Name>Pad 06</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="173">
+  <Name>Pad 11</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="174">
+  <Name>Pad 07</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="175">
+  <Name>Pad 10</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="176">
+  <Name>Pad 08</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="177">
+  <Name>Pad 13</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="178">
+  <Name>Pad 09</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="179">
+  <Name>Pad 15</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="183">
+  <Name>Pad 14</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="185">
+  <Name>Pad 16</Name>
+  <Type>Button</Type>
+  <ExtraPress>True</ExtraPress>
+ </Channel>
+</InputProfile>

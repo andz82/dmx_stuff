@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.1</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED SLS-90 Strobe</Model>
+ <Type>Strobe</Type>
+ <Channel Name="LED Ring 1 - Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="LED Ring 1 - Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="249">Strobe Increasing</Capability>
+  <Capability Min="250" Max="255">Blinder</Capability>
+ </Channel>
+ <Channel Name="LED Ring 2 - Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="LED Ring 2 - Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="249">Strobe Increasing</Capability>
+  <Capability Min="250" Max="255">Blinder</Capability>
+ </Channel>
+ <Channel Name="LED Ring 3 - Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="LED Ring 3 - Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="249">Strobe Increasing</Capability>
+  <Capability Min="250" Max="255">Blinder</Capability>
+ </Channel>
+ <Channel Name="LED Ring 4 - Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="LED Ring 4 - Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="249">Strobe Increasing</Capability>
+  <Capability Min="250" Max="255">Blinder</Capability>
+ </Channel>
+ <Channel Name="Programms">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="10">No Function</Capability>
+  <Capability Min="11" Max="40">Programm 1</Capability>
+  <Capability Min="41" Max="70">Programm 2</Capability>
+  <Capability Min="71" Max="100">Programm 3</Capability>
+  <Capability Min="101" Max="130">Programm 4</Capability>
+  <Capability Min="131" Max="160">Programm 5</Capability>
+  <Capability Min="161" Max="190">Programm 6</Capability>
+  <Capability Min="191" Max="220">Programm 7</Capability>
+  <Capability Min="221" Max="250">Programm 8</Capability>
+  <Capability Min="251" Max="255">Music Control</Capability>
+ </Channel>
+ <Channel Name="Programm Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Increasing</Capability>
+ </Channel>
+ <Channel Name="Overall Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">Dimmer</Capability>
+ </Channel>
+ <Channel Name="Overall Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="255">Strobe Increasing</Capability>
+ </Channel>
+ <Channel Name="Overall Strobe/Blinder">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="249">Strobe Increasing</Capability>
+  <Capability Min="250" Max="255">Blinder</Capability>
+ </Channel>
+ <Channel Name="Flash Duration">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Duration (15-990ms)</Capability>
+ </Channel>
+ <Channel Name="Flash Frequency">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="255">Flash Frequency (1-30Hz)</Capability>
+ </Channel>
+ <Channel Name="Special Effects">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="42">Aufblenden</Capability>
+  <Capability Min="43" Max="85">Abblenden</Capability>
+  <Capability Min="86" Max="128">Auf-Abblenden</Capability>
+  <Capability Min="129" Max="171">Zufall</Capability>
+  <Capability Min="172" Max="214">Blitz</Capability>
+  <Capability Min="215" Max="255">Spikes</Capability>
+ </Channel>
+ <Channel Name="Pixelmakros">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">Off</Capability>
+  <Capability Min="6" Max="42">Makro 1</Capability>
+  <Capability Min="43" Max="85">Makro 5</Capability>
+  <Capability Min="86" Max="128">Makro 2</Capability>
+  <Capability Min="129" Max="171">Makro 3</Capability>
+  <Capability Min="172" Max="214">Makro 4</Capability>
+  <Capability Min="215" Max="255">Makro 6</Capability>
+ </Channel>
+ <Mode Name="12 Ch">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="6500"/>
+   <Dimensions Weight="1.5" Width="170" Height="194" Depth="107"/>
+   <Lens Name="Other" DegreesMin="110" DegreesMax="110"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="24" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">LED Ring 1 - Dimmer</Channel>
+  <Channel Number="1">LED Ring 1 - Strobe</Channel>
+  <Channel Number="2">LED Ring 2 - Dimmer</Channel>
+  <Channel Number="3">LED Ring 2 - Strobe</Channel>
+  <Channel Number="4">LED Ring 3 - Dimmer</Channel>
+  <Channel Number="5">LED Ring 3 - Strobe</Channel>
+  <Channel Number="6">LED Ring 4 - Dimmer</Channel>
+  <Channel Number="7">LED Ring 4 - Strobe</Channel>
+  <Channel Number="8">Programms</Channel>
+  <Channel Number="9">Programm Speed</Channel>
+  <Channel Number="10">Overall Dimmer</Channel>
+  <Channel Number="11">Overall Strobe</Channel>
+  <Head>
+   <Channel>0</Channel>
+  </Head>
+  <Head>
+   <Channel>2</Channel>
+  </Head>
+  <Head>
+   <Channel>4</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="2 Ch">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="6500"/>
+   <Dimensions Weight="1.5" Width="170" Height="194" Depth="107"/>
+   <Lens Name="Other" DegreesMin="110" DegreesMax="110"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="24" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Overall Dimmer</Channel>
+  <Channel Number="1">Overall Strobe/Blinder</Channel>
+  <Head>
+   <Channel>0</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="5 Ch">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="6500"/>
+   <Dimensions Weight="1.5" Width="170" Height="194" Depth="107"/>
+   <Lens Name="Other" DegreesMin="110" DegreesMax="110"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="24" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Overall Dimmer</Channel>
+  <Channel Number="1">Flash Duration</Channel>
+  <Channel Number="2">Flash Frequency</Channel>
+  <Channel Number="3">Special Effects</Channel>
+  <Channel Number="4">Pixelmakros</Channel>
+  <Head>
+   <Channel>0</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="8 Ch">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="6500"/>
+   <Dimensions Weight="1.5" Width="170" Height="194" Depth="107"/>
+   <Lens Name="Other" DegreesMin="110" DegreesMax="110"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="24" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">LED Ring 1 - Dimmer</Channel>
+  <Channel Number="1">LED Ring 1 - Strobe</Channel>
+  <Channel Number="2">LED Ring 2 - Dimmer</Channel>
+  <Channel Number="3">LED Ring 2 - Strobe</Channel>
+  <Channel Number="4">LED Ring 3 - Dimmer</Channel>
+  <Channel Number="5">LED Ring 3 - Strobe</Channel>
+  <Channel Number="6">LED Ring 4 - Dimmer</Channel>
+  <Channel Number="7">LED Ring 4 - Strobe</Channel>
+  <Head>
+   <Channel>0</Channel>
+  </Head>
+  <Head>
+   <Channel>2</Channel>
+  </Head>
+  <Head>
+   <Channel>4</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+  </Head>
+ </Mode>
+</FixtureDefinition>
