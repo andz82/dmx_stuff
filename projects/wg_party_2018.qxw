@@ -9,9 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Etherdream" ID="0">
-    <Input Plugin="MIDI" Line="1" Profile="Akai  MPD24">
-     <PluginParameters MIDISendNoteOff="true"/>
-    </Input>
+    <Input Plugin="MIDI" Line="1" Profile="Akai  MPD24"/>
     <Output Plugin="OSC" Line="1">
      <PluginParameters outputIP="10.23.20.141" outputPort="60000"/>
     </Output>
@@ -212,7 +210,7 @@
    <FixtureVal ID="0">7,0</FixtureVal>
   </Function>
   <Function ID="3" Type="Sequence" Name="Zoomer Line out" Path="Lazor" BoundScene="2">
-   <Speed FadeIn="0" FadeOut="0" Duration="110"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="460"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -260,7 +258,7 @@
    <FixtureVal ID="0">10,240</FixtureVal>
   </Function>
   <Function ID="18" Type="Chaser" Name="Lazo_grenish_blueish" Path="Color">
-   <Speed FadeIn="0" FadeOut="0" Duration="220"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="920"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -273,6 +271,9 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,0,7,0,8,0</FixtureVal>
    <FixtureVal ID="2">6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="20" Type="EFX" Name="CircularFast" Path="MovingHeads">
    <Fixture>
@@ -314,9 +315,12 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,0,7,0,8,255</FixtureVal>
    <FixtureVal ID="2">6,0,7,0,8,255</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="22" Type="Chaser" Name="MovingHead_grenish_blueish" Path="Color">
-   <Speed FadeIn="0" FadeOut="0" Duration="220"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="920"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -335,11 +339,17 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,0,7,255,8,0</FixtureVal>
    <FixtureVal ID="2">6,0,7,255,8,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,255,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="25" Type="Scene" Name="Cyan" Path="Color">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,0,7,255,8,255</FixtureVal>
    <FixtureVal ID="2">6,0,7,255,8,255</FixtureVal>
+   <FixtureVal ID="6">0,0,1,255,2,255</FixtureVal>
+   <FixtureVal ID="5">0,0,1,255,2,255</FixtureVal>
+   <FixtureVal ID="7">0,0,1,255,2,255</FixtureVal>
   </Function>
   <Function ID="26" Type="Scene" Name="Off" Path="Fog">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -373,7 +383,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="1760"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7360"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Diamond</Algorithm>
@@ -397,16 +407,25 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,255,7,0,8,0</FixtureVal>
    <FixtureVal ID="2">6,255,7,0,8,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="32" Type="Scene" Name="Magenta" Path="Color">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,255,7,0,8,255</FixtureVal>
    <FixtureVal ID="2">6,255,7,0,8,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="33" Type="Scene" Name="Yellow" Path="Color">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">6,255,7,255,8,0</FixtureVal>
    <FixtureVal ID="2">6,255,7,255,8,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,0</FixtureVal>
   </Function>
   <Function ID="34" Type="Scene" Name="3 Vertical Lines" Path="Lazor/Pattern">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -429,7 +448,7 @@
    <FixtureVal ID="0">1,74,4,161,6,38</FixtureVal>
   </Function>
   <Function ID="39" Type="Chaser" Name="Pattern" Path="Lazor">
-   <Speed FadeIn="0" FadeOut="0" Duration="1760"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7360"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -447,7 +466,7 @@
    <FixtureGroup>1</FixtureGroup>
    <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="ramp" Value="30"/>
-   <Property Name="presetSize" Value="5"/>
+   <Property Name="presetSize" Value="20"/>
    <Property Name="stepsize" Value="10"/>
   </Function>
   <Function ID="95" Type="Scene" Name="Scene Blue" Path="StageBarDJ">
@@ -495,6 +514,13 @@
    <DimmerControl>1</DimmerControl>
    <MonoColor>4294901760</MonoColor>
    <FixtureGroup>2</FixtureGroup>
+   <Property Name="color2Index" Value="Red"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color5Index" Value="Orange"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="presetNumber" Value="5"/>
+   <Property Name="presetCollision" Value="Yes"/>
   </Function>
   <Function ID="112" Type="RGBMatrix" Name="Animation Circles - LED Stage Bar 216">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -504,6 +530,7 @@
    <DimmerControl>1</DimmerControl>
    <MonoColor>4294901760</MonoColor>
    <FixtureGroup>2</FixtureGroup>
+   <Property Name="circlesAmount" Value="3"/>
   </Function>
   <Function ID="113" Type="RGBMatrix" Name="Animation Even/Odd - LED Stage Bar 216">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -567,6 +594,7 @@
    <DimmerControl>1</DimmerControl>
    <MonoColor>4294901760</MonoColor>
    <FixtureGroup>2</FixtureGroup>
+   <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="120" Type="RGBMatrix" Name="Animation Noise - LED Stage Bar 216" BlendMode="Mask">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -715,6 +743,7 @@
    <DimmerControl>1</DimmerControl>
    <MonoColor>4294901760</MonoColor>
    <FixtureGroup>2</FixtureGroup>
+   <Property Name="StarsAmount" Value="50"/>
   </Function>
   <Function ID="136" Type="RGBMatrix" Name="Animation Stripes - LED Stage Bar 216">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -796,7 +825,7 @@
     <Tap>
      <Input Universe="0" Channel="164"/>
     </Tap>
-    <Time>220</Time>
+    <Time>920</Time>
     <Function FadeIn="0" FadeOut="0" Duration="5">3</Function>
     <Function FadeIn="0" FadeOut="0" Duration="9">39</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">22</Function>
@@ -1144,7 +1173,7 @@
      </Appearance>
      <Input Universe="0" Channel="16"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="134" Value="0">
+     <Level LowLimit="0" HighLimit="134" Value="30">
       <Channel Fixture="1">5</Channel>
       <Channel Fixture="2">5</Channel>
      </Level>
