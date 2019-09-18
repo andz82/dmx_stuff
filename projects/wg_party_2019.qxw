@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.3 GIT</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="Etherdream" Line="0">
+     <PluginParameters outputIP="10.23.20.30" outputPort="60000"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>0</ID>
+   <Name>Mini LED #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>1</ID>
+   <Name>Mini LED #2</Name>
+   <Universe>0</Universe>
+   <Address>5</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>2</ID>
+   <Name>Mini LED #3</Name>
+   <Universe>0</Universe>
+   <Address>10</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>3</ID>
+   <Name>Mini LED #4</Name>
+   <Universe>0</Universe>
+   <Address>15</Address>
+   <Channels>5</Channels>
+  </Fixture>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
