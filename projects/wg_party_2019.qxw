@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.3 GIT</Version>
@@ -9,6 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" Line="1" Profile="Akai  MPD24"/>
     <Output Plugin="Etherdream" Line="0">
      <PluginParameters outputIP="10.23.20.30" outputPort="60000"/>
     </Output>
@@ -18,45 +19,640 @@
    <Universe Name="Universe 4" ID="3"/>
   </InputOutputMap>
   <Fixture>
-   <Manufacturer>TSSS</Manufacturer>
-   <Model>Mini LED RGBW</Model>
-   <Mode>5 Ch</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>1000</Weight>
+   <Height>133</Height>
    <ID>0</ID>
-   <Name>Mini LED #1</Name>
+   <Name>LED Bars - Row 1</Name>
    <Universe>0</Universe>
    <Address>0</Address>
-   <Channels>5</Channels>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>1000</Weight>
+   <Height>133</Height>
+   <ID>1</ID>
+   <Name>LED Bars - Row 2</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>RGBPanel</Model>
+   <Mode>RGB</Mode>
+   <Weight>1000</Weight>
+   <Height>133</Height>
+   <ID>2</ID>
+   <Name>LED Bars - Row 3</Name>
+   <Universe>0</Universe>
+   <Address>48</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>3</ID>
+   <Name>Moving Head Spot #1</Name>
+   <Universe>0</Universe>
+   <Address>72</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>4</ID>
+   <Name>Moving Head Spot #2</Name>
+   <Universe>0</Universe>
+   <Address>85</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>5</ID>
+   <Name>Moving Head Spot #3</Name>
+   <Universe>0</Universe>
+   <Address>98</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Renkforce</Manufacturer>
+   <Model>Moving Head</Model>
+   <Mode>8Ch</Mode>
+   <ID>6</ID>
+   <Name>Washer Renkforce</Name>
+   <Universe>0</Universe>
+   <Address>111</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Renkforce</Manufacturer>
+   <Model>Moving Head</Model>
+   <Mode>9Ch</Mode>
+   <ID>7</ID>
+   <Name>Washer China</Name>
+   <Universe>0</Universe>
+   <Address>119</Address>
+   <Channels>9</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>EUrolite</Manufacturer>
+   <Model>LED PAR56R RGB DMX</Model>
+   <Mode>6 Ch.</Mode>
+   <ID>8</ID>
+   <Name>PAR schwarz</Name>
+   <Universe>0</Universe>
+   <Address>128</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>9</ID>
+   <Name>PAR silver</Name>
+   <Universe>0</Universe>
+   <Address>134</Address>
+   <Channels>6</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>TSSS</Manufacturer>
    <Model>Mini LED RGBW</Model>
-   <Mode>5 Ch</Mode>
-   <ID>1</ID>
+   <Mode>8 Ch</Mode>
+   <ID>10</ID>
+   <Name>Mini LED #1</Name>
+   <Universe>0</Universe>
+   <Address>140</Address>
+   <Channels>8</Channels>
+   <ForcedLTP>0,1,2,3,4</ForcedLTP>
+   <Modifier Channel="2" Name="Exponential Medium"/>
+   <Modifier Channel="3" Name="Exponential Medium"/>
+   <Modifier Channel="1" Name="Exponential Medium"/>
+   <Modifier Channel="4" Name="Exponential Medium"/>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>8 Ch</Mode>
+   <ID>11</ID>
    <Name>Mini LED #2</Name>
    <Universe>0</Universe>
-   <Address>5</Address>
-   <Channels>5</Channels>
+   <Address>148</Address>
+   <Channels>8</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>TSSS</Manufacturer>
    <Model>Mini LED RGBW</Model>
-   <Mode>5 Ch</Mode>
-   <ID>2</ID>
+   <Mode>8 Ch</Mode>
+   <ID>12</ID>
    <Name>Mini LED #3</Name>
    <Universe>0</Universe>
-   <Address>10</Address>
-   <Channels>5</Channels>
+   <Address>156</Address>
+   <Channels>8</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>TSSS</Manufacturer>
    <Model>Mini LED RGBW</Model>
-   <Mode>5 Ch</Mode>
-   <ID>3</ID>
+   <Mode>8 Ch</Mode>
+   <ID>13</ID>
    <Name>Mini LED #4</Name>
    <Universe>0</Universe>
-   <Address>15</Address>
+   <Address>164</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic Smoke</Model>
+   <Mode>Amount</Mode>
+   <ID>14</ID>
+   <Name>Nebel</Name>
+   <Universe>0</Universe>
+   <Address>172</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Laserworld</Manufacturer>
+   <Model>CS-1000RGB MKII</Model>
+   <Mode>CS1000 RGB MKII</Mode>
+   <ID>15</ID>
+   <Name>CS-1000RGB MKII</Name>
+   <Universe>0</Universe>
+   <Address>173</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED SLS-90 Strobe</Model>
+   <Mode>5 Ch</Mode>
+   <ID>16</ID>
+   <Name>Strobe</Name>
+   <Universe>0</Universe>
+   <Address>184</Address>
    <Channels>5</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>China</Manufacturer>
+   <Model>UV Light Bar</Model>
+   <Mode>7 Ch</Mode>
+   <ID>17</ID>
+   <Name>UV Bar #1</Name>
+   <Universe>0</Universe>
+   <Address>189</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>China</Manufacturer>
+   <Model>UV Light Bar</Model>
+   <Mode>7 Ch</Mode>
+   <ID>18</ID>
+   <Name>UV Bar #2</Name>
+   <Universe>0</Universe>
+   <Address>196</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>LED Bars</Name>
+   <Size X="8" Y="3"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="0">1</Head>
+   <Head X="2" Y="0" Fixture="0">2</Head>
+   <Head X="3" Y="0" Fixture="0">3</Head>
+   <Head X="4" Y="0" Fixture="0">4</Head>
+   <Head X="5" Y="0" Fixture="0">5</Head>
+   <Head X="6" Y="0" Fixture="0">6</Head>
+   <Head X="7" Y="0" Fixture="0">7</Head>
+   <Head X="0" Y="1" Fixture="1">0</Head>
+   <Head X="1" Y="1" Fixture="1">1</Head>
+   <Head X="2" Y="1" Fixture="1">2</Head>
+   <Head X="3" Y="1" Fixture="1">3</Head>
+   <Head X="4" Y="1" Fixture="1">4</Head>
+   <Head X="5" Y="1" Fixture="1">5</Head>
+   <Head X="6" Y="1" Fixture="1">6</Head>
+   <Head X="7" Y="1" Fixture="1">7</Head>
+   <Head X="0" Y="2" Fixture="2">0</Head>
+   <Head X="1" Y="2" Fixture="2">1</Head>
+   <Head X="2" Y="2" Fixture="2">2</Head>
+   <Head X="3" Y="2" Fixture="2">3</Head>
+   <Head X="4" Y="2" Fixture="2">4</Head>
+   <Head X="5" Y="2" Fixture="2">5</Head>
+   <Head X="6" Y="2" Fixture="2">6</Head>
+   <Head X="7" Y="2" Fixture="2">7</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>Moving Heads Spot</Name>
+   <Size X="3" Y="1"/>
+   <Head X="0" Y="0" Fixture="3">0</Head>
+   <Head X="1" Y="0" Fixture="4">0</Head>
+   <Head X="2" Y="0" Fixture="5">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="EFX" Name="MHS Circle" Path="Movin Heads Spot">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>127</Width>
+   <Height>64</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="1" Type="EFX" Name="MHS Line UpDwn" Path="Movin Heads Spot">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2449"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>0</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>82</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Spiegelkugel 1 dwn" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,140,3,1</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,22,3,0</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Spiegelkugel 1+2 dwn" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,140,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,140,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,22,3,0</FixtureVal>
+  </Function>
+  <Function ID="4" Type="RGBMatrix" Name="LED Bars Mask" Path="LED Bars" BlendMode="Mask">
+   <Speed FadeIn="0" FadeOut="0" Duration="52"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Squares</Algorithm>
+   <DimmerControl>1</DimmerControl>
+   <MonoColor>4294967295</MonoColor>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="squaresAmount" Value="3"/>
+   <Property Name="fillSquares" Value="No"/>
+   <Property Name="fadeMode" Value="Don't Fade"/>
+  </Function>
+  <Function ID="5" Type="Scene" Name="LED Bars purple" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,255,3,255,4,0,5,255,6,255,7,0,8,255,9,255,10,0,11,255,12,255,13,0,14,255,15,255,16,0,17,255,18,255,19,0,20,255,21,255,22,0,23,255</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="LED Bars yellow" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,180,2,0,3,255,4,180,5,0,6,255,7,180,8,0,9,255,10,180,11,0,12,255,13,180,14,0,15,255,16,180,17,0,18,255,19,180,20,0,21,255,22,180,23,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,180,2,0,3,255,4,180,5,0,6,255,7,180,8,0,9,255,10,180,11,0,12,255,13,180,14,0,15,255,16,180,17,0,18,255,19,180,20,0,21,255,22,180,23,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,180,2,0,3,255,4,180,5,0,6,255,7,180,8,0,9,255,10,180,11,0,12,255,13,180,14,0,15,255,16,180,17,0,18,255,19,180,20,0,21,255,22,180,23,0</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Collection" Name="LED Bars Matrix purple" Path="LED Bars">
+   <Step Number="0">5</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="8" Type="Collection" Name="LED Bars Matrix yellow" Path="LED Bars">
+   <Step Number="0">6</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="9" Type="Chaser" Name="LED Bars purple-yellow" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="423"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">7</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">8</Step>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Spiegelkugel" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,22,3,0</FixtureVal>
+  </Function>
+  <Function ID="11" Type="RGBMatrix" Name="Triangle Mask" BlendMode="Mask">
+   <Speed FadeIn="0" FadeOut="0" Duration="423"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Random Row</Algorithm>
+   <DimmerControl>1</DimmerControl>
+   <MonoColor>4294967295</MonoColor>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
+  <Function ID="12" Type="Scene" Name="MHS purple" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">6,255,7,0,8,255</FixtureVal>
+   <FixtureVal ID="4">6,255,7,0,8,255</FixtureVal>
+   <FixtureVal ID="5">6,255,7,0,8,255</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="MHS yellow" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">6,255,7,123,8,0</FixtureVal>
+   <FixtureVal ID="4">6,255,7,30,8,0</FixtureVal>
+   <FixtureVal ID="5">6,255,7,64,8,0</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Scene" Name="MHS white" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="4">6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="5">6,255,7,255,8,255</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Collection" Name="MHS purple" Path="Moving Heads Spot">
+   <Step Number="0">12</Step>
+   <Step Number="1">11</Step>
+  </Function>
+  <Function ID="16" Type="Collection" Name="MHS yellow" Path="Moving Heads Spot">
+   <Step Number="0">13</Step>
+   <Step Number="1">11</Step>
+  </Function>
+  <Function ID="17" Type="Collection" Name="MHS white" Path="Moving Heads Spot">
+   <Step Number="0">14</Step>
+   <Step Number="1">11</Step>
+  </Function>
+  <Function ID="18" Type="Scene" Name="MHS on" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,255</FixtureVal>
+   <FixtureVal ID="4">5,255</FixtureVal>
+   <FixtureVal ID="5">5,255</FixtureVal>
+  </Function>
+  <Function ID="19" Type="Scene" Name="MHS off" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,0</FixtureVal>
+   <FixtureVal ID="4">5,0</FixtureVal>
+   <FixtureVal ID="5">5,0</FixtureVal>
+  </Function>
+  <Function ID="20" Type="Chaser" Name="MHS purple-yellow" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="423"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">15</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">16</Step>
+  </Function>
+  <Function ID="21" Type="EFX" Name="MHS Line UpDwn Single" Path="Movin Heads Spot">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>240</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2449"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>0</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>82</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="22" Type="EFX" Name="MHS Round single" Path="Movin Heads Spot">
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>120</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>240</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2449"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>70</Width>
+   <Height>0</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>172</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>194</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="23" Type="Scene" Name="Spiegelkugel 1+2+3 dwn" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,140,3,1</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,140,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,140,3,0</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Spiegelkugel 2+3 dwn" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,140,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,140,3,0</FixtureVal>
+  </Function>
+  <Function ID="25" Type="Scene" Name="Spiegelkugel 3 dwn" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,140,3,0</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Chaser" Name="up-dwn-circle" Path="Moving Heads Spot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="423"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="481" FadeOut="0">27</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">2</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">23</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">24</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">25</Step>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Spiegelkugel up">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,22,3,0</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="LED Bars green" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,80,3,0,4,255,5,80,6,0,7,255,8,80,9,0,10,255,11,80,12,0,13,255,14,80,15,0,16,255,17,80,18,0,19,255,20,80,21,0,22,255,23,80</FixtureVal>
+   <FixtureVal ID="1">0,0,1,255,2,80,3,0,4,255,5,80,6,0,7,255,8,80,9,0,10,255,11,80,12,0,13,255,14,80,15,0,16,255,17,80,18,0,19,255,20,80,21,0,22,255,23,80</FixtureVal>
+   <FixtureVal ID="2">0,0,1,255,2,80,3,0,4,255,5,80,6,0,7,255,8,80,9,0,10,255,11,80,12,0,13,255,14,80,15,0,16,255,17,80,18,0,19,255,20,80,21,0,22,255,23,80</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Scene" Name="LED Bars red" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,30,2,10,3,255,4,30,5,10,6,255,7,30,8,10,9,255,10,30,11,10,12,255,13,30,14,10,15,255,16,30,17,10,18,255,19,30,20,10,21,255,22,30,23,10</FixtureVal>
+   <FixtureVal ID="1">0,255,1,30,2,10,3,255,4,30,5,10,6,255,7,30,8,10,9,255,10,30,11,10,12,255,13,30,14,10,15,255,16,30,17,10,18,255,19,30,20,10,21,255,22,30,23,10</FixtureVal>
+   <FixtureVal ID="2">0,255,1,30,2,10,3,255,4,30,5,10,6,255,7,30,8,10,9,255,10,30,11,10,12,255,13,30,14,10,15,255,16,30,17,10,18,255,19,30,20,10,21,255,22,30,23,10</FixtureVal>
+  </Function>
+  <Function ID="30" Type="Scene" Name="LED Bars white" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+  </Function>
+  <Function ID="31" Type="Scene" Name="red-white" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,0,2,0,3,0,4,255,5,0,6,255,7,0,8,0,9,0,10,255,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,255,19,0,20,0,21,0,22,255,23,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,0,3,0,4,255,5,0,6,255,7,0,8,0,9,0,10,255,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,255,19,0,20,0,21,0,22,255,23,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,0,3,0,4,255,5,0,6,255,7,0,8,0,9,0,10,255,11,0,12,255,13,0,14,0,15,0,16,255,17,0,18,255,19,0,20,0,21,0,22,255,23,0</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Scene" Name="all white">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255,15,255,16,255,17,255,18,255,19,255,20,255,21,255,22,255,23,255</FixtureVal>
+   <FixtureVal ID="3">5,255,6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="4">5,255,6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="5">5,255,6,255,7,255,8,255</FixtureVal>
+  </Function>
+  <Function ID="33" Type="RGBMatrix" Name="LED Bars Strobe" Path="LED Bars" BlendMode="Mask">
+   <Speed FadeIn="0" FadeOut="0" Duration="52"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Strobe</Algorithm>
+   <DimmerControl>1</DimmerControl>
+   <MonoColor>4294967295</MonoColor>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="34" Type="Scene" Name="MHS Strobe" Path="Moving Heads Spot">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">5,200</FixtureVal>
+   <FixtureVal ID="4">5,200</FixtureVal>
+   <FixtureVal ID="5">5,200</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="white-red" Path="LED Bars">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,0,2,0,3,255,4,0,5,0,6,255,7,0,8,0,9,255,10,0,11,0,12,0,13,255,14,0,15,0,16,255,17,0,18,0,19,255,20,0,21,0,22,255,23,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,255,2,0,3,255,4,0,5,0,6,0,7,255,8,0,9,255,10,0,11,0,12,0,13,255,14,0,15,255,16,0,17,0,18,0,19,255,20,0,21,255,22,0,23,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,255,2,0,3,255,4,0,5,0,6,0,7,255,8,0,9,255,10,0,11,0,12,0,13,255,14,0,15,255,16,0,17,0,18,0,19,255,20,0,21,255,22,0,23,0</FixtureVal>
+  </Function>
+  <Function ID="36" Type="Chaser" Name="zuckerstange" Path="LED Bars">
+   <Speed FadeIn="500" FadeOut="0" Duration="1500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="2000" Hold="0" FadeOut="0">31</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">35</Step>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <FxItem ID="0" XPos="1906.04" YPos="865.772"/>
+   <FxItem ID="1" XPos="1906.04" YPos="1020.13"/>
+   <FxItem ID="2" XPos="1899.33" YPos="1181.21"/>
+   <FxItem ID="3" XPos="2585.76" YPos="2640.84"/>
+   <FxItem ID="4" XPos="2109.18" YPos="2625.75"/>
+   <FxItem ID="5" XPos="2322.15" YPos="2308.72"/>
+  </Monitor>
  </Engine>
  <VirtualConsole>
   <Frame Caption="">
@@ -67,6 +663,478 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
+   <Frame Caption="Triangle" ID="0">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="0" Y="0" Width="525" Height="420"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="" ID="4">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="75" Y="40" Width="110" Height="310"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Circle" ID="5" Icon="">
+      <WindowState Visible="False" X="5" Y="5" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="0"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Up Down" ID="6" Icon="">
+      <WindowState Visible="False" X="5" Y="55" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="1"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Spiegelkugel" ID="13" Icon="">
+      <WindowState Visible="False" X="5" Y="105" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="10"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Line UpDwn Single" ID="26" Icon="">
+      <WindowState Visible="False" X="5" Y="155" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="21"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Round single" ID="27" Icon="">
+      <WindowState Visible="False" X="5" Y="205" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="22"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="up-dwn-circle" ID="1" Icon="">
+      <WindowState Visible="False" X="5" Y="255" Width="100" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="26"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Slider Caption="Triangle" ID="12" WidgetStyle="Slider" InvertedAppearance="true">
+     <WindowState Visible="False" X="10" Y="40" Width="65" Height="260"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="16"/>
+     <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="8" HighLimit="134" Value="8">
+      <Channel Fixture="3">5</Channel>
+      <Channel Fixture="4">5</Channel>
+      <Channel Fixture="5">5</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Matrix Caption="Triangle Mask" ID="17">
+     <WindowState Visible="False" X="310" Y="35" Width="205" Height="250"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="11" InstantApply="true"/>
+     <Visibility>17</Visibility>
+     <Input Universe="0" Channel="41"/>
+     <Control ID="7">
+      <Type>Animation</Type>
+      <Resource>Strobe</Resource>
+      <Property Name="freq">8</Property>
+     </Control>
+     <Control ID="8">
+      <Type>Animation</Type>
+      <Resource>Random Single</Resource>
+     </Control>
+     <Control ID="9">
+      <Type>Animation</Type>
+      <Resource>Random Fill Single</Resource>
+     </Control>
+     <Control ID="10">
+      <Type>Animation</Type>
+      <Resource>Stripes</Resource>
+      <Property Name="orientation">Horizontal</Property>
+     </Control>
+    </Matrix>
+    <SoloFrame Caption="" ID="21">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="190" Y="35" Width="120" Height="170"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Triangle purple" ID="19" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="105" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4285878395</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="15"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Triangle yellow" ID="20" Icon="">
+      <WindowState Visible="False" X="10" Y="60" Width="105" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4278392496</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="16"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Triangle white" ID="22" Icon="">
+      <WindowState Visible="False" X="10" Y="110" Width="105" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293848812</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="17"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="" ID="23">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="210" Y="335" Width="170" Height="60"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="MHS on" ID="24" Icon="">
+      <WindowState Visible="False" X="5" Y="5" Width="80" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4287291956</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="18"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="MHS off" ID="25" Icon="">
+      <WindowState Visible="False" X="85" Y="5" Width="80" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4293863721</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="19"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Button Caption="Color Chaser" ID="2" Icon="">
+     <WindowState Visible="False" X="195" Y="210" Width="115" Height="40"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="20"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Strobe" ID="28" Icon="">
+     <WindowState Visible="False" X="405" Y="320" Width="105" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="34"/>
+     <Action>Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
+   <Frame Caption="" ID="7">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="530" Y="0" Width="580" Height="305"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="" ID="8">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="65" Y="40" Width="125" Height="150"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>False</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="LED Bars Matrix purple" ID="9" Icon="">
+      <WindowState Visible="False" X="10" Y="10" Width="105" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4287278980</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="7"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="LED Bars Matrix yellow" ID="10" Icon="">
+      <WindowState Visible="False" X="10" Y="60" Width="105" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>4294764879</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Matrix Caption="LED Bars Noise Mask" ID="14">
+     <WindowState Visible="False" X="205" Y="45" Width="205" Height="250"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4" InstantApply="true"/>
+     <Visibility>16</Visibility>
+     <Input Universe="0" Channel="41"/>
+     <Control ID="2">
+      <Type>Animation</Type>
+      <Resource>Squares</Resource>
+      <Property Name="squaresAmount">3</Property>
+      <Property Name="fillSquares">No</Property>
+      <Property Name="fadeMode">Don't Fade</Property>
+     </Control>
+     <Control ID="3">
+      <Type>Animation</Type>
+      <Resource>Fill</Resource>
+      <Property Name="orientation">Horizontal</Property>
+     </Control>
+     <Control ID="4">
+      <Type>Animation</Type>
+      <Resource>Stripes</Resource>
+      <Property Name="orientation">Horizontal</Property>
+     </Control>
+     <Control ID="5">
+      <Type>Animation</Type>
+      <Resource>Strobe</Resource>
+      <Property Name="freq">2</Property>
+      <Input Universe="0" Channel="185"/>
+     </Control>
+     <Control ID="6">
+      <Type>Animation</Type>
+      <Resource>Waves</Resource>
+      <Property Name="tailfade">Yes</Property>
+      <Property Name="direction">Right</Property>
+      <Property Name="orientation">Horizontal</Property>
+      <Property Name="taillength">50</Property>
+     </Control>
+    </Matrix>
+    <Slider Caption="Matrix" ID="15" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="5" Y="40" Width="55" Height="255"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Input Universe="0" Channel="17"/>
+     <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="176"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Button Caption="Color Chaser" ID="16" Icon="">
+     <WindowState Visible="False" X="75" Y="255" Width="115" Height="40"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
+   <SpeedDial Caption="Duration" ID="18">
+    <WindowState Visible="False" X="1050" Y="455" Width="175" Height="160"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>100</Visibility>
+    <AbsoluteValue Minimum="10" Maximum="1000">
+     <Input Universe="0" Channel="36"/>
+    </AbsoluteValue>
+    <Tap>
+     <Input Universe="0" Channel="164"/>
+    </Tap>
+    <ResetFactorOnDialChange>True</ResetFactorOnDialChange>
+    <Div>
+     <Input Universe="0" Channel="165"/>
+    </Div>
+    <Time>423</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">26</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">11</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">20</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">9</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="3">4</Function>
+   </SpeedDial>
+   <AudioTriggers BarsNumber="16" Caption="" ID="11">
+    <WindowState Visible="False" X="1375" Y="205" Width="300" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="166"/>
+    <SpectrumBar Name="#1 (0Hz - 312Hz)" Type="3" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="0" WidgetID="18"/>
+   </AudioTriggers>
+   <Button Caption="All white flash" ID="3" Icon="">
+    <WindowState Visible="False" X="695" Y="380" Width="130" Height="55"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="32"/>
+    <Action>Flash</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="179"/>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>

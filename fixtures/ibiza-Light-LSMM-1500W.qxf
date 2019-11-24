@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.0 GIT</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>ibiza Light</Manufacturer>
+ <Model>LSMM 1500W</Model>
+ <Type>Smoke</Type>
+ <Channel Name="Flog Output">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255">Fog Output</Capability>
+ </Channel>
+ <Mode Name="Fog">
+  <Channel Number="0">Flog Output</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="1500" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

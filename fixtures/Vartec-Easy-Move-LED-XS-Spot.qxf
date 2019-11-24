@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2 GIT</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Manufacturer>Vartec</Manufacturer>
+ <Model>Easy Move LED XS Spot</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedTiltFastSlow"/>
+ <Channel Name="Dimmer/Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="7">Closed</Capability>
+  <Capability Min="8" Max="134">100-0%</Capability>
+  <Capability Min="135" Max="239">Strobe slow/fast</Capability>
+  <Capability Min="240" Max="255">Open</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="Color macro" Preset="ColorMacro"/>
+ <Channel Name="Vector Speed (color)">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255">Vector Speed (color)</Capability>
+ </Channel>
+ <Channel Name="Movement Macros">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">No Function</Capability>
+  <Capability Min="8" Max="22">Auto Program 1</Capability>
+  <Capability Min="23" Max="37">Auto Program 2</Capability>
+  <Capability Min="38" Max="52">Auto Program 3</Capability>
+  <Capability Min="53" Max="67">Auto Program 4</Capability>
+  <Capability Min="68" Max="82">Auto Program 5</Capability>
+  <Capability Min="83" Max="97">Auto Program 6</Capability>
+  <Capability Min="98" Max="112">Auto Program 7</Capability>
+  <Capability Min="113" Max="127">Auto Program 8</Capability>
+  <Capability Min="128" Max="142">Sound Active 1</Capability>
+  <Capability Min="143" Max="157">Sound Active 2</Capability>
+  <Capability Min="158" Max="172">Sound Active 3</Capability>
+  <Capability Min="173" Max="187">Sound Active 4</Capability>
+  <Capability Min="188" Max="202">Sound Active 5</Capability>
+  <Capability Min="203" Max="217">Sound Active 6</Capability>
+  <Capability Min="218" Max="232">Sound Active 7</Capability>
+  <Capability Min="233" Max="255">Sound Active 8</Capability>
+ </Channel>
+ <Channel Name="Gobo wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7">Gobo 1 (open)</Capability>
+  <Capability Min="8" Max="15">Gobo 2</Capability>
+  <Capability Min="16" Max="23">Gobo 3</Capability>
+  <Capability Min="24" Max="31">Gobo 4</Capability>
+  <Capability Min="32" Max="39">Gobo 5</Capability>
+  <Capability Min="40" Max="47">Gobo 6</Capability>
+  <Capability Min="48" Max="55">Gobo 7</Capability>
+  <Capability Min="56" Max="63">Gobo 8</Capability>
+  <Capability Min="64" Max="71">Gobo 9</Capability>
+  <Capability Min="72" Max="79">Gobo 10</Capability>
+  <Capability Min="80" Max="94">Gobo Shake 1</Capability>
+  <Capability Min="95" Max="109">Gobo Shake 2</Capability>
+  <Capability Min="110" Max="124">Gobo Shake 3</Capability>
+  <Capability Min="125" Max="139">Gobo Shake 4</Capability>
+  <Capability Min="140" Max="154">Gobo Shake 5</Capability>
+  <Capability Min="155" Max="169">Gobo Shake 6</Capability>
+  <Capability Min="170" Max="184">Gobo Shake 7</Capability>
+  <Capability Min="185" Max="199">Gobo Shake 8</Capability>
+  <Capability Min="200" Max="214">Gobo Shake 9</Capability>
+  <Capability Min="215" Max="235">Positive Rainbow increasing speed</Capability>
+  <Capability Min="236" Max="255">Negative Rainbow increasing speed</Capability>
+ </Channel>
+ <Mode Name="13Ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt speed</Channel>
+  <Channel Number="5">Dimmer/Strobe</Channel>
+  <Channel Number="6">Red</Channel>
+  <Channel Number="7">Green</Channel>
+  <Channel Number="8">Blue</Channel>
+  <Channel Number="9">Color macro</Channel>
+  <Channel Number="10">Vector Speed (color)</Channel>
+  <Channel Number="11">Movement Macros</Channel>
+  <Channel Number="12">Gobo wheel</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>12</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="5Ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Dimmer/Strobe</Channel>
+  <Channel Number="3">Color macro</Channel>
+  <Channel Number="4">Gobo wheel</Channel>
+  <Head>
+   <Channel>1</Channel>
+   <Channel>0</Channel>
+   <Channel>4</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="PC" DegreesMin="20" DegreesMax="20"/>
+  <Focus Type="Head" PanMax="540" TiltMax="90"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
