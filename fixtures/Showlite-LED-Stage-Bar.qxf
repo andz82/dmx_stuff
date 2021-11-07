@@ -3,12 +3,12 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.10.5b</Version>
+  <Version>4.12.5 GIT</Version>
   <Author>andz</Author>
  </Creator>
  <Manufacturer>Showlite</Manufacturer>
  <Model>LED Stage Bar 216</Model>
- <Type>Effect</Type>
+ <Type>LED Bar (Beams)</Type>
  <Channel Name="Red 1">
   <Group Byte="0">Intensity</Group>
   <Colour>Red</Colour>
@@ -424,4 +424,12 @@
    <Channel>25</Channel>
   </Head>
  </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="8" Height="1"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
 </FixtureDefinition>

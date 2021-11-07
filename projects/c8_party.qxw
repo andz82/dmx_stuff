@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5 GIT</Version>
+  <Author>andz</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="ArtNet" UID="127.0.0.1" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1">
+    <Output Plugin="ArtNet" UID="10.23.20.101" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 3" ID="2">
+    <Output Plugin="ArtNet" UID="10.23.20.101" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>0</ID>
+   <Name>Mini LED RGBW #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>1</ID>
+   <Name>Mini LED RGBW #2</Name>
+   <Universe>0</Universe>
+   <Address>5</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>2</ID>
+   <Name>Mini LED RGBW #3</Name>
+   <Universe>0</Universe>
+   <Address>10</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>TSSS</Manufacturer>
+   <Model>Mini LED RGBW</Model>
+   <Mode>5 Ch</Mode>
+   <ID>3</ID>
+   <Name>Mini LED RGBW #4</Name>
+   <Universe>0</Universe>
+   <Address>15</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Renkforce</Manufacturer>
+   <Model>Moving Head</Model>
+   <Mode>13Ch</Mode>
+   <ID>4</ID>
+   <Name>Washer_Renkforce</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Renkforce</Manufacturer>
+   <Model>Moving Head</Model>
+   <Mode>14Ch</Mode>
+   <ID>5</ID>
+   <Name>Wascher_China</Name>
+   <Universe>0</Universe>
+   <Address>33</Address>
+   <Channels>14</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>6</ID>
+   <Name>Moving_Head_01</Name>
+   <Universe>0</Universe>
+   <Address>47</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>7</ID>
+   <Name>Moving_Head_02</Name>
+   <Universe>0</Universe>
+   <Address>60</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED TMH-6</Model>
+   <Mode>13 DMX channel mode</Mode>
+   <ID>8</ID>
+   <Name>Moving_Head_03</Name>
+   <Universe>0</Universe>
+   <Address>73</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>9</ID>
+   <Name>LED_Bar_Fenster_01</Name>
+   <Universe>0</Universe>
+   <Address>86</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>10</ID>
+   <Name>LED_Bar_Fenster_02</Name>
+   <Universe>0</Universe>
+   <Address>110</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>11</ID>
+   <Name>LED_Bar_Fenster_03</Name>
+   <Universe>0</Universe>
+   <Address>134</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>12</ID>
+   <Name>LED_Bar_Fenster_04</Name>
+   <Universe>0</Universe>
+   <Address>158</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>13</ID>
+   <Name>LED_Bar_DJ_01</Name>
+   <Universe>0</Universe>
+   <Address>182</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showlite</Manufacturer>
+   <Model>LED Stage Bar 216</Model>
+   <Mode>24Ch</Mode>
+   <ID>14</ID>
+   <Name>LED_Bar_DJ_02</Name>
+   <Universe>0</Universe>
+   <Address>206</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED SLS-90 Strobe</Model>
+   <Mode>5 Ch</Mode>
+   <ID>15</ID>
+   <Name>Strobe</Name>
+   <Universe>0</Universe>
+   <Address>230</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>Dynamic Fog 700</Model>
+   <Mode>DMX</Mode>
+   <ID>16</ID>
+   <Name>Nebel</Name>
+   <Universe>0</Universe>
+   <Address>235</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Laserworld</Manufacturer>
+   <Model>CS-1000RGB MKII</Model>
+   <Mode>CS1000 RGB MKII</Mode>
+   <ID>17</ID>
+   <Name>Lazor</Name>
+   <Universe>0</Universe>
+   <Address>236</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Mini LED PAR</Name>
+   <Size X="4" Y="1"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="2">0</Head>
+   <Head X="3" Y="0" Fixture="3">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>Washer</Name>
+   <Size X="2" Y="1"/>
+   <Head X="0" Y="0" Fixture="4">0</Head>
+   <Head X="1" Y="0" Fixture="5">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>Moving_Heads</Name>
+   <Size X="3" Y="1"/>
+   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="1" Y="0" Fixture="7">0</Head>
+   <Head X="2" Y="0" Fixture="8">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="3">
+   <Name>LED_Bars_Fenster</Name>
+   <Size X="8" Y="4"/>
+   <Head X="0" Y="0" Fixture="9">0</Head>
+   <Head X="1" Y="0" Fixture="9">1</Head>
+   <Head X="2" Y="0" Fixture="9">2</Head>
+   <Head X="3" Y="0" Fixture="9">3</Head>
+   <Head X="4" Y="0" Fixture="9">4</Head>
+   <Head X="5" Y="0" Fixture="9">5</Head>
+   <Head X="6" Y="0" Fixture="9">6</Head>
+   <Head X="7" Y="0" Fixture="9">7</Head>
+   <Head X="0" Y="1" Fixture="10">0</Head>
+   <Head X="1" Y="1" Fixture="10">1</Head>
+   <Head X="2" Y="1" Fixture="10">2</Head>
+   <Head X="3" Y="1" Fixture="10">3</Head>
+   <Head X="4" Y="1" Fixture="10">4</Head>
+   <Head X="5" Y="1" Fixture="10">5</Head>
+   <Head X="6" Y="1" Fixture="10">6</Head>
+   <Head X="7" Y="1" Fixture="10">7</Head>
+   <Head X="0" Y="2" Fixture="11">0</Head>
+   <Head X="1" Y="2" Fixture="11">1</Head>
+   <Head X="2" Y="2" Fixture="11">2</Head>
+   <Head X="3" Y="2" Fixture="11">3</Head>
+   <Head X="4" Y="2" Fixture="11">4</Head>
+   <Head X="5" Y="2" Fixture="11">5</Head>
+   <Head X="6" Y="2" Fixture="11">6</Head>
+   <Head X="7" Y="2" Fixture="11">7</Head>
+   <Head X="0" Y="3" Fixture="12">0</Head>
+   <Head X="1" Y="3" Fixture="12">1</Head>
+   <Head X="2" Y="3" Fixture="12">2</Head>
+   <Head X="3" Y="3" Fixture="12">3</Head>
+   <Head X="4" Y="3" Fixture="12">4</Head>
+   <Head X="5" Y="3" Fixture="12">5</Head>
+   <Head X="6" Y="3" Fixture="12">6</Head>
+   <Head X="7" Y="3" Fixture="12">7</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="4">
+   <Name>LED_Bars_DJ</Name>
+   <Size X="8" Y="2"/>
+   <Head X="0" Y="0" Fixture="13">0</Head>
+   <Head X="1" Y="0" Fixture="13">1</Head>
+   <Head X="2" Y="0" Fixture="13">2</Head>
+   <Head X="3" Y="0" Fixture="13">3</Head>
+   <Head X="4" Y="0" Fixture="13">4</Head>
+   <Head X="5" Y="0" Fixture="13">5</Head>
+   <Head X="6" Y="0" Fixture="13">6</Head>
+   <Head X="7" Y="0" Fixture="13">7</Head>
+   <Head X="0" Y="1" Fixture="14">0</Head>
+   <Head X="1" Y="1" Fixture="14">1</Head>
+   <Head X="2" Y="1" Fixture="14">2</Head>
+   <Head X="3" Y="1" Fixture="14">3</Head>
+   <Head X="4" Y="1" Fixture="14">4</Head>
+   <Head X="5" Y="1" Fixture="14">5</Head>
+   <Head X="6" Y="1" Fixture="14">6</Head>
+   <Head X="7" Y="1" Fixture="14">7</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="RGBMatrix" Name="Fenster_Plasma_Chillig_YOPG" Path="LED Bars Fenster">
+   <Speed FadeIn="50" FadeOut="50" Duration="50"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
+   <MonoColor>4294902762</MonoColor>
+   <EndColor>4294931201</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>3</FixtureGroup>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="color3Index" Value="Hot Pink"/>
+   <Property Name="ramp" Value="20"/>
+   <Property Name="stepsize" Value="19"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color4Index" Value="Lime"/>
+  </Function>
+  <Function ID="3" Type="RGBMatrix" Name="Fenster_Plasma_Fast_YOPG" Path="LED Bars Fenster">
+   <Speed FadeIn="50" FadeOut="50" Duration="50"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
+   <MonoColor>4294902762</MonoColor>
+   <EndColor>4294931201</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>3</FixtureGroup>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="color3Index" Value="Hot Pink"/>
+   <Property Name="ramp" Value="20"/>
+   <Property Name="stepsize" Value="40"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color4Index" Value="Lime"/>
+  </Function>
+  <Function ID="4" Type="RGBMatrix" Name="DJ_Plasma_Chillig_YOPG" Path="LED Bars DJ">
+   <Speed FadeIn="50" FadeOut="50" Duration="50"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
+   <MonoColor>4294902762</MonoColor>
+   <EndColor>4294931201</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>4</FixtureGroup>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="color3Index" Value="Hot Pink"/>
+   <Property Name="ramp" Value="20"/>
+   <Property Name="stepsize" Value="19"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color4Index" Value="Lime"/>
+  </Function>
+  <Function ID="5" Type="RGBMatrix" Name="DJ_Plasma_Fast_YOPG" Path="LED Bars DJ">
+   <Speed FadeIn="50" FadeOut="50" Duration="50"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma (Colors)</Algorithm>
+   <MonoColor>4294902762</MonoColor>
+   <EndColor>4294931201</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>4</FixtureGroup>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="color3Index" Value="Hot Pink"/>
+   <Property Name="ramp" Value="20"/>
+   <Property Name="stepsize" Value="40"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color4Index" Value="Lime"/>
+  </Function>
+  <Function ID="6" Type="RGBMatrix" Name="New RGB Matrix 6">
+   <Speed FadeIn="0" FadeOut="0" Duration="819"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Waves</Algorithm>
+   <MonoColor>4294901990</MonoColor>
+   <EndColor>4294937858</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>3</FixtureGroup>
+   <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="60"/>
+   <Property Name="direction" Value="Out"/>
+  </Function>
+  <Function ID="7" Type="Scene" Name="LED_Bars_Fenster" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="9">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+  </Function>
+  <Function ID="8" Type="Sequence" Name="New RGB Matrix 6 Sequence" BoundScene="7">
+   <Speed FadeIn="0" FadeOut="0" Duration="51"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:21,255,22,141,23,2:10:21,255,22,141,23,2:11:21,255,22,141,23,2:12:21,255,22,141,23,2</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:18,255,19,120,20,35:10:18,255,19,120,20,35:11:18,255,19,120,20,35:12:18,255,19,120,20,35</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:15,255,16,100,17,68:10:15,255,16,100,17,68:11:15,255,16,100,17,68:12:15,255,16,100,17,68</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:12,255,13,80,14,100:10:12,255,13,80,14,100:11:12,255,13,80,14,100:12:12,255,13,80,14,100</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:9,255,10,60,11,133:10:9,255,10,60,11,133:11:9,255,10,60,11,133:12:9,255,10,60,11,133</Step>
+   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:6,255,7,40,8,165:10:6,255,7,40,8,165:11:6,255,7,40,8,165:12:6,255,7,40,8,165</Step>
+   <Step Number="6" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:3,255,4,20,5,198:10:3,255,4,20,5,198:11:3,255,4,20,5,198:12:3,255,4,20,5,198</Step>
+   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0" Values="96">9:0,255,2,230:10:0,255,2,230:11:0,255,2,230:12:0,255,2,230</Step>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <FxItem ID="0" XPos="2979.87" YPos="3281.88"/>
+   <FxItem ID="1" XPos="3335.57" YPos="3167.79"/>
+   <FxItem ID="2" XPos="3718.12" YPos="3073.83"/>
+   <FxItem ID="3" XPos="3953.02" YPos="3315.44"/>
+   <FxItem ID="4" XPos="2879.19" YPos="46.9799"/>
+   <FxItem ID="5" XPos="3919.46" YPos="60.4027"/>
+   <FxItem ID="6" XPos="107.383" YPos="3677.85"/>
+   <FxItem ID="7" XPos="577.181" YPos="3684.56"/>
+   <FxItem ID="8" XPos="1053.69" YPos="3677.85"/>
+   <FxItem ID="9" XPos="2530.2" YPos="899.329" Rotation="90"/>
+   <FxItem ID="10" XPos="2530.2" YPos="1906.04" Rotation="90"/>
+   <FxItem ID="11" XPos="3523.49" YPos="932.886" Rotation="90"/>
+   <FxItem ID="12" XPos="3523.49" YPos="1926.17" Rotation="90"/>
+   <FxItem ID="13" XPos="13.4228" YPos="979.866"/>
+   <FxItem ID="14" XPos="1020.13" YPos="979.866"/>
+   <FxItem ID="15" XPos="1093.96" YPos="2060.4"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Frame Caption="LED Bars Fenster" ID="0">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="30" Y="20" Width="425" Height="270"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="Animations" ID="1">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="100" Y="40" Width="315" Height="225"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Chillig YOPG" ID="3" Icon="">
+      <WindowState Visible="False" X="15" Y="45" Width="75" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="0"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Fast YOPG" ID="4" Icon="">
+      <WindowState Visible="False" X="15" Y="90" Width="75" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="3"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="New RGB Matrix 0 Sequence" ID="11" Icon="">
+      <WindowState Visible="False" X="125" Y="40" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Slider Caption="Fenster" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="10" Y="40" Width="85" Height="225"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="255"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </Frame>
+   <Frame Caption="LED Bars DJ" ID="9">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="460" Y="20" Width="425" Height="270"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="Animations" ID="7">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="100" Y="40" Width="315" Height="225"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Chillig YOPG" ID="5" Icon="">
+      <WindowState Visible="False" X="15" Y="45" Width="75" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="4"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Fast YOPG" ID="6" Icon="">
+      <WindowState Visible="False" X="15" Y="90" Width="75" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="5"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Slider Caption="Fenster" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="10" Y="40" Width="85" Height="225"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None">Submaster</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="255"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </Frame>
+   <SpeedDial Caption="Duration" ID="10">
+    <WindowState Visible="False" X="25" Y="700" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65636</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Time>408</Time>
+    <Function FadeIn="1" FadeOut="1" Duration="3">8</Function>
+   </SpeedDial>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
