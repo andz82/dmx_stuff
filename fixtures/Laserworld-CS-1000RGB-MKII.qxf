@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.10.5b</Version>
+  <Version>4.12.4</Version>
   <Author>Andz</Author>
  </Creator>
  <Manufacturer>Laserworld</Manufacturer>
@@ -195,16 +195,20 @@
  </Channel>
  <Channel Name="Color">
   <Group Byte="0">Colour</Group>
-  <Capability Min="0" Max="24" Color="#ff0004" Color2="#2600ff">multicolor</Capability>
-  <Capability Min="25" Max="49" Color="#ffffff">white</Capability>
-  <Capability Min="50" Max="74" Color="#ff0000">red</Capability>
-  <Capability Min="75" Max="99" Color="#ffff00">yellow</Capability>
-  <Capability Min="100" Max="124" Color="#00ff00">green</Capability>
-  <Capability Min="125" Max="149" Color="#00ffff">cyan</Capability>
-  <Capability Min="150" Max="174" Color="#0000ff">blue</Capability>
-  <Capability Min="175" Max="199" Color="#ff00ff">purple</Capability>
+  <Capability Min="0" Max="24" Preset="ColorDoubleMacro" Res1="#ff0004" Res2="#2600ff">multicolor</Capability>
+  <Capability Min="25" Max="49" Preset="ColorMacro" Res1="#ffffff">white</Capability>
+  <Capability Min="50" Max="74" Preset="ColorMacro" Res1="#ff0000">red</Capability>
+  <Capability Min="75" Max="99" Preset="ColorMacro" Res1="#ffff00">yellow</Capability>
+  <Capability Min="100" Max="124" Preset="ColorMacro" Res1="#00ff00">green</Capability>
+  <Capability Min="125" Max="149" Preset="ColorMacro" Res1="#00ffff">cyan</Capability>
+  <Capability Min="150" Max="174" Preset="ColorMacro" Res1="#0000ff">blue</Capability>
+  <Capability Min="175" Max="199" Preset="ColorMacro" Res1="#ff00ff">purple</Capability>
   <Capability Min="200" Max="224">auto color change single</Capability>
   <Capability Min="225" Max="255">auto color change multi</Capability>
+ </Channel>
+ <Channel Name="Color Animation Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Color Animation Speed (Slow to fast)</Capability>
  </Channel>
  <Mode Name="CS1000 RGB MKII">
   <Physical>
@@ -225,5 +229,13 @@
   <Channel Number="8">Pattern Buildup</Channel>
   <Channel Number="9">Strobe</Channel>
   <Channel Number="10">Color</Channel>
+  <Channel Number="11">Color Animation Speed</Channel>
  </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
 </FixtureDefinition>

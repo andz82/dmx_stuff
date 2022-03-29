@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.5 GIT</Version>
@@ -9,14 +9,15 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="ArtNet" UID="127.0.0.1" Line="1"/>
+    <Input Plugin="MIDI" UID="BeatSeeker MIDI 1" Line="1">
+     <PluginParameters initmessage="None" midichannel="16"/>
+    </Input>
+    <Output Plugin="ArtNet" UID="10.23.20.101" Line="0">
+     <PluginParameters outputIP="10.23.20.100"/>
+    </Output>
    </Universe>
-   <Universe Name="Universe 2" ID="1">
-    <Output Plugin="ArtNet" UID="10.23.20.101" Line="0"/>
-   </Universe>
-   <Universe Name="Universe 3" ID="2">
-    <Output Plugin="ArtNet" UID="10.23.20.101" Line="0"/>
-   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
   </InputOutputMap>
   <Fixture>
@@ -285,14 +286,14 @@
    <EndColor>4294931201</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="color2Index" Value="Orange"/>
-   <Property Name="color1Index" Value="Yellow"/>
-   <Property Name="color5Index" Value="OFF"/>
    <Property Name="color3Index" Value="Hot Pink"/>
    <Property Name="ramp" Value="20"/>
-   <Property Name="stepsize" Value="19"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="color4Index" Value="Lime"/>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="stepsize" Value="19"/>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Fenster_Plasma_Fast_YOPG" Path="LED Bars Fenster">
    <Speed FadeIn="50" FadeOut="50" Duration="50"/>
@@ -303,14 +304,14 @@
    <EndColor>4294931201</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="color1Index" Value="Yellow"/>
-   <Property Name="color2Index" Value="Orange"/>
-   <Property Name="color5Index" Value="OFF"/>
    <Property Name="color3Index" Value="Hot Pink"/>
    <Property Name="ramp" Value="20"/>
-   <Property Name="stepsize" Value="40"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="color4Index" Value="Lime"/>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="stepsize" Value="40"/>
   </Function>
   <Function ID="4" Type="RGBMatrix" Name="DJ_Plasma_Chillig_YOPG" Path="LED Bars DJ">
    <Speed FadeIn="50" FadeOut="50" Duration="50"/>
@@ -321,14 +322,14 @@
    <EndColor>4294931201</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Yellow"/>
-   <Property Name="color2Index" Value="Orange"/>
-   <Property Name="color5Index" Value="OFF"/>
    <Property Name="color3Index" Value="Hot Pink"/>
    <Property Name="ramp" Value="20"/>
-   <Property Name="stepsize" Value="19"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="color4Index" Value="Lime"/>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="stepsize" Value="19"/>
   </Function>
   <Function ID="5" Type="RGBMatrix" Name="DJ_Plasma_Fast_YOPG" Path="LED Bars DJ">
    <Speed FadeIn="50" FadeOut="50" Duration="50"/>
@@ -339,14 +340,14 @@
    <EndColor>4294931201</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>4</FixtureGroup>
-   <Property Name="color1Index" Value="Yellow"/>
-   <Property Name="color2Index" Value="Orange"/>
-   <Property Name="color5Index" Value="OFF"/>
    <Property Name="color3Index" Value="Hot Pink"/>
    <Property Name="ramp" Value="20"/>
-   <Property Name="stepsize" Value="40"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="color4Index" Value="Lime"/>
+   <Property Name="color1Index" Value="Yellow"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="color2Index" Value="Orange"/>
+   <Property Name="color5Index" Value="OFF"/>
+   <Property Name="stepsize" Value="40"/>
   </Function>
   <Function ID="6" Type="RGBMatrix" Name="New RGB Matrix 6">
    <Speed FadeIn="0" FadeOut="0" Duration="819"/>
@@ -357,9 +358,9 @@
    <EndColor>4294937858</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>3</FixtureGroup>
-   <Property Name="tailfade" Value="Yes"/>
    <Property Name="taillength" Value="60"/>
    <Property Name="direction" Value="Out"/>
+   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="7" Type="Scene" Name="LED_Bars_Fenster" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -369,7 +370,7 @@
    <FixtureVal ID="12">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
   </Function>
   <Function ID="8" Type="Sequence" Name="New RGB Matrix 6 Sequence" BoundScene="7">
-   <Speed FadeIn="0" FadeOut="0" Duration="51"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="347"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -586,7 +587,10 @@
     </Appearance>
     <Visibility>65636</Visibility>
     <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <Time>408</Time>
+    <Tap>
+     <Input Universe="0" Channel="61451"/>
+    </Tap>
+    <Time>2779</Time>
     <Function FadeIn="1" FadeOut="1" Duration="3">8</Function>
    </SpeedDial>
   </Frame>
